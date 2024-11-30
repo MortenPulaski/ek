@@ -1,14 +1,14 @@
 <?php require_once('./layout/header.php'); ?>
 
-
-<section class="page-section" id="kontakt" style="background-image: url('./assets/img/portfolio/fullsize/11.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 100vh; padding: 60px 0; background-color: rgba(255, 255, 255, 0.5);">
-    <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-8 col-xl-6 text-center">
-                <h2 class="mt-0">Kontaktieren Sie mich!</h2>
+<!-- Kontakt-->
+<header class="kontakt">
+    <div class="container px-4 px-lg-5 h-100">
+        <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+            <div class="col-lg-8 align-self-end">
+                <h2 class="text-black-50 font-weight-bold">Kontakt</h2>
                 <hr class="divider" />
-                <p class="text-muted mb-5">Bereit, ein neues Projekt mit uns zu starten? Schreiben Sie uns eine
-                    Nachricht und wir kontaktieren Sie, sobald wie möglich!</p>
+                <p class="text-black-50">Bereit, Ihr neues Projekt mit uns zu starten?<br> Schreiben Sie uns eine
+                    Nachricht und wir kontaktieren Sie, sobald wie möglich!</p><hr>
             </div>
         </div>
         <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
@@ -72,7 +72,8 @@
                     </div>
                     <!-- Submit Button-->
                     <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton"
-                            type="submit">Submit</button></div>
+                        type="submit">Senden</button><hr>
+                    </div>
                 </form>
             </div>
         </div>
@@ -83,5 +84,5 @@
             </div>
         </div>
     </div>
-    </section>
+</header>
 <?php require_once('./layout/footer.php'); ?>

@@ -40,8 +40,8 @@
                 </a>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <a class="portfolio-box" href="assets/img/portfolio/fullsize/13.jpg" title="Project Name">
-                    <img class="img-fluid" src="assets/img/portfolio/thumbnails/13.jpg" alt="..." />
+                <a class="portfolio-box" href="assets/img/portfolio/fullsize/11.jpg" title="Project Name">
+                    <img class="img-fluid" src="assets/img/portfolio/thumbnails/11.jpg" alt="..." />
                     <div class="portfolio-box-caption">
                         <div class="project-category text-white-50">Category</div>
                         <div class="project-name">Project Name</div>
@@ -49,8 +49,8 @@
                 </a>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <a class="portfolio-box" href="assets/img/portfolio/fullsize/17.jpg" title="Project Name">
-                    <img class="img-fluid" src="assets/img/portfolio/thumbnails/17.jpg" alt="..." />
+                <a class="portfolio-box" href="assets/img/portfolio/fullsize/12.jpg" title="Project Name">
+                    <img class="img-fluid" src="assets/img/portfolio/thumbnails/12.jpg" alt="..." />
                     <div class="portfolio-box-caption p-3">
                         <div class="project-category text-white-50">Category</div>
                         <div class="project-name">Project Name</div>

@@ -1,15 +1,16 @@
 <?php require_once('./layout/header.php'); ?>
 
-<section class="page-section" id="login" style="background-image: url('./assets/img/portfolio/fullsize/12.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 100vh; padding: 60px 0; background-color: rgba(255, 255, 255, 0.5);">
+<!-- Login-->
+<header class="login">
     <div class="container px-4 px-lg-5 h-100">
         <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
             <div class="col-lg-8 align-self-end">
-                <h1 class="text-white font-weight-bold">Login für registrierte Benutzer</h1>
+                <h2 class="text-black-50 font-weight-bold">Login für registrierte Benutzer</h2>
                 <hr class="divider" />
             </div>
             <div class="col-lg-8">
                 <form action="/login" method="post">
-                    <div class="form-group">
+                    <div class="form-group"><hr>
                         <label for="username">Benutzername</label>
                         <input type="text" id="username" name="username" placeholder="Benutzername" required class="form-control">
                     </div>
@@ -27,6 +28,5 @@
             </div>
         </div>
     </div>
-
-</section>
+</header>
 <?php require_once('./layout/footer.php'); ?>
