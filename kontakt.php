@@ -5,9 +5,9 @@
     <div class="container px-4 px-lg-5 h-100">
         <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
             <div class="col-lg-8 align-self-end">
-                <h2 class="text-black-50 font-weight-bold">Kontakt</h2>
+                <h2 class="text-warning font-weight-bold">Kontakt</h2>
                 <hr class="divider" />
-                <p class="text-black-50">Bereit, Ihr neues Projekt mit uns zu starten?<br> Schreiben Sie uns eine
+                <p class="text-warning">Bereit, Ihr neues Projekt mit uns zu starten?<br> Schreiben Sie uns eine
                     Nachricht und wir kontaktieren Sie, sobald wie möglich!</p><hr>
             </div>
         </div>
@@ -71,7 +71,7 @@
                         <div class="text-center text-danger mb-3">Error sending message!</div>
                     </div>
                     <!-- Submit Button-->
-                    <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton"
+                    <div class="d-grid"><button class="text-black-50 btn btn-primary btn-xl disabled" id="submitButton"
                         type="submit">Senden</button><hr>
                     </div>
                 </form>

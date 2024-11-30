@@ -5,10 +5,10 @@
     <div class="container px-4 px-lg-5 h-100">
         <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
             <div class="col-lg-8 align-self-end">
-                <h2 class="text-black-50 font-weight-bold">Login für registrierte Benutzer</h2>
+                <h2 class="text-warning font-weight-bold">Login für registrierte Benutzer</h2>
                 <hr class="divider" />
             </div>
-            <div class="col-lg-8">
+            <div class=" text-warning col-lg-8">
                 <form action="/login" method="post">
                     <div class="form-group"><hr>
                         <label for="username">Benutzername</label>

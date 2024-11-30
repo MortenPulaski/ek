@@ -1,7 +1,7 @@
 <!-- Footer-->
-<footer class="bg-light py-5">
+<footer class="py-4" style="background-color: #fce9ca;">
     <div class="container px-4 px-lg-5">
-        <div class="small text-center text-muted">Copyright &copy; 2024 - Marcin Paluch</div>
+        <div class="text-warning2 small text-center">Copyright &copy; 2024 - Marcin Paluch</div>
     </div>
 </footer>
 <!-- Bootstrap core JS-->

@@ -5,9 +5,9 @@
     <div class="container px-4 px-lg-5 h-100">
         <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
             <div class="col-lg-8 align-self-end">
-                <h2 class="text-black-50 font-weight-bold">Ich unterstütze Sie bei Gestalltung Ihrer privaten IT-Infrastruktur!</h2>
+                <h2 class="text-warning font-weight-bold">Ich unterstütze Sie bei Gestalltung Ihrer privaten IT-Infrastruktur!</h2>
                 <hr class="divider" />
-                <p class="text-black-50">"Das Recht auf informationelle Selbstbestimmung, also das Recht jeder
+                <p class="text-warning">"Das Recht auf informationelle Selbstbestimmung, also das Recht jeder
                     Person, selbst über die Preisgabe und Verwendung ihrer personenbezogenen Daten zu bestimmen, ist
                     Teil des Allgemeinen Persönlichkeitsrechts aus Artikel 2 Absatz 1 in Verbindung mit Artikel 1 Absatz
                     1 Grundgesetz."(Quelle: <a
@@ -19,7 +19,7 @@
                     dass ihre Daten nicht in die Hände Dritter gelangen, die möglicherweise nicht die gleichen
                     Datenschutzstandards einhalten.<br>
                 </p>
-                <a class="btn btn-primary" href="./#services">Jetzt starten!</a><br><br>
+                <a class="text-black-50 btn btn-primary" href="./#services">Jetzt starten!</a><br><br>
             </div>
         </div>
     </div>
