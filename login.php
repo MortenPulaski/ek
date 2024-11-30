@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit;
     } else {
         // Fehlermeldung anzeigen
-        $error = "Ungültiger Benutzername oder Passwort.";
+        $error = "Ungültiger Benutzername oder Passwort!!!";
     }
 }
 ?>
@@ -33,11 +33,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <h2 class="text-warning font-weight-bold">Login für registrierte Benutzer</h2>
                 <hr class="divider" />
             </div>
+            <div class="mt-auto">
+                <h2 class="text-danger"><?php if (isset($error)) echo "$error"; ?></h2>
+            </div>
             <div class=" text-warning col-lg-8">
                 <form action="./login.php" method="post">
                     <div class="form-group"><hr>
                         <label for="username">Benutzername</label>
-                        <input type="text" id="username" name="username" placeholder="Benutzername" required class="form-control">
+                        <input type="text" id="username" name="username" placeholder="Benutzername" required class="form-control"><br>
                     </div>
                     <div class="form-group">
                         <label for="password">Passwort</label>
@@ -47,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <input type="submit" value="Einloggen" class="btn btn-primary"><hr>
                     </div>
                     <div class="form-group">
-                        <a href="/forgot-password">Passwort vergessen?</a>
+                        <a href="https://www.brain-fit.com/">Passwort vergessen?</a>
                     </div>
                 </form>
             </div>
