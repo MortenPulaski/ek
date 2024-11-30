@@ -1,3 +1,28 @@
+<?php
+session_start();
+
+// Beispiel für die Verarbeitung des Login-Formulars
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    // Hier solltest du die Anmeldedaten mit deiner Datenbank überprüfen
+    // Beispiel: Angenommen, die Anmeldedaten sind korrekt
+    if ($username === 'marcin' && $password === '0815') {
+        // Setze die Benutzersitzung
+        $_SESSION['loggedin'] = true;
+        $_SESSION['username'] = $username;
+
+        // Weiterleitung zur Portfolio-Seite
+        header('Location: secret.php');
+        exit;
+    } else {
+        // Fehlermeldung anzeigen
+        $error = "Ungültiger Benutzername oder Passwort.";
+    }
+}
+?>
+
 <?php require_once('./layout/header.php'); ?>
 
 <!-- Login-->
@@ -9,7 +34,7 @@
                 <hr class="divider" />
             </div>
             <div class=" text-warning col-lg-8">
-                <form action="/login" method="post">
+                <form action="./login.php" method="post">
                     <div class="form-group"><hr>
                         <label for="username">Benutzername</label>
                         <input type="text" id="username" name="username" placeholder="Benutzername" required class="form-control">
