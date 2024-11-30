@@ -11,9 +11,15 @@
                     Teil des Allgemeinen Persönlichkeitsrechts aus Artikel 2 Absatz 1 in Verbindung mit Artikel 1 Absatz
                     1 Grundgesetz."(Quelle: <a
                         href="https://www.bmi.bund.de/DE/themen/verfassung/datenschutz/datenschutz-node.html#:~:text=Das%20Recht%20auf%20informationelle%20Selbstbestimmung,Artikel%201%20Absatz%201%20Grundgesetz."
-                        style="color: blue">BMI-Bund</a> )</p><br>
+                        style="color: blue">BMI-Bund</a> )<br><br>
+                    Selfhosting spielt eine entscheidende Rolle im Kontext des Selbstbestimmungsrechts beim Datenschutz,
+                    da es den Nutzern ermöglicht, die Kontrolle über ihre eigenen Daten zu behalten. Durch das Hosten
+                    von Anwendungen und Diensten auf eigenen Servern können private Personen und Organisationen sicherstellen,
+                    dass ihre Daten nicht in die Hände Dritter gelangen, die möglicherweise nicht die gleichen
+                    Datenschutzstandards einhalten.
+                    </p>
 
-                <a class="btn btn-light btn-xl" href="./#services">Jetzt starten!</a>
+                    <a class="btn btn-light btn-xl" href="./#services">Jetzt starten!</a>
             </div>
         </div>
     </div>
