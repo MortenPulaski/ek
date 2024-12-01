@@ -34,20 +34,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <hr class="divider" />
             </div>
             <div class="mt-auto">
-                <h2 class="text-danger"><?php if (isset($error)) echo "$error"; ?></h2>
+                <h2 class="text-danger"><?php if (isset($error))
+                    echo "$error"; ?></h2>
             </div>
             <div class=" text-warning col-lg-8">
                 <form action="./login.php" method="post">
-                    <div class="form-group"><hr>
+                    <div class="form-group">
+                        <hr>
                         <label for="username">Benutzername</label>
-                        <input type="text" id="username" name="username" placeholder="Benutzername" required class="form-control"><br>
+                        <input type="text" id="username" name="username" placeholder="Benutzername" required
+                            class="form-control"><br>
                     </div>
                     <div class="form-group">
                         <label for="password">Passwort</label>
-                        <input type="password" id="password" name="password" placeholder="Passwort" required class="form-control"><br>
+                        <input type="password" id="password" name="password" placeholder="Passwort" required
+                            class="form-control"><br>
                     </div>
                     <div class="form-group">
-                        <input type="submit" value="Einloggen" class="btn btn-primary"><hr>
+                        <input type="submit" value="Einloggen" class="btn btn-primary">
+                        <hr>
                     </div>
                     <div class="form-group">
                         <a href="https://www.brain-fit.com/">Passwort vergessen?</a>

@@ -73,7 +73,8 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 <section class="page-section bg-dark text-white">
     <div class="container px-4 px-lg-5 text-center">
         <h2 class="text-warning mb-4">Fange jetzt mit Docker an!</h2>
-        <a class="text-warning btn btn-primary" href="https://www.docker.com/products/docker-desktop/">Jetzt downloaden!</a>
+        <a class="text-warning btn btn-primary" href="https://www.docker.com/products/docker-desktop/">Jetzt
+            downloaden!</a>
     </div>
 </section>
 

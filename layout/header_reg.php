@@ -35,7 +35,8 @@
                     <li class="nav-item"><a class="text-warning2 nav-link" href="./#services">Services</a></li>
                     <li class="nav-item"><a class="text-warning2 nav-link" href="./kontakt.php">Kontakt</a></li>
                     <li class="nav-item">
-                        <span class="text-danger nav-link">Willkommen, <?php echo htmlspecialchars($_SESSION['username']); ?>!</span>
+                        <span class="text-danger nav-link">Willkommen,
+                            <?php echo htmlspecialchars($_SESSION['username']); ?>!</span>
                     </li>
                     <li class="nav-item"><a class="text-danger nav-link" href="./logout.php">Logout</a></li>
                 </ul>

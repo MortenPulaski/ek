@@ -8,7 +8,8 @@
                 <h2 class="text-warning font-weight-bold">Kontakt</h2>
                 <hr class="divider" />
                 <p class="text-warning">Bereit, Ihr neues Projekt mit uns zu starten?<br> Schreiben Sie uns eine
-                    Nachricht und wir kontaktieren Sie, sobald wie möglich!</p><hr>
+                    Nachricht und wir kontaktieren Sie, sobald wie möglich!</p>
+                <hr>
             </div>
         </div>
         <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
@@ -72,7 +73,8 @@
                     </div>
                     <!-- Submit Button-->
                     <div class="d-grid"><button class="text-black-50 btn btn-primary btn-xl disabled" id="submitButton"
-                        type="submit">Senden</button><hr>
+                            type="submit">Senden</button>
+                        <hr>
                     </div>
                 </form>
             </div>
