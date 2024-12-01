@@ -55,6 +55,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <hr>
                     </div>
                     <div class="form-group">
+                        <a href="./register.php">Kein Benutzerkonto? Hier registrieren!</a><hr>
+                    </div>
+                    <div class="form-group">
                         <a href="https://www.brain-fit.com/">Passwort vergessen?</a>
                     </div>
                 </form>
