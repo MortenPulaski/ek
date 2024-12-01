@@ -13,7 +13,7 @@ $conn = null;
 try {
     // Verbindung zur Datenbank herstellen
     $conn = new mysqli($servername, $username, $password, $dbname);
-    
+
     // Überprüfen, ob die Verbindung erfolgreich war
     if ($conn->connect_error) {
         throw new Exception("Verbindung zur Datenbank fehlgeschlagen: " . $conn->connect_error);
@@ -72,26 +72,31 @@ if ($conn) {
                 <hr class="divider" />
             </div>
             <div class="mt-auto">
-                <h2 class="text-danger"><?php if (isset($error)) echo "$error"; ?></h2>
-                <h2 class="text-danger"><?php if (isset($db_error)) echo "$db_error"; ?></h2>
+                <h2 class="text-danger"><?php if (isset($error))
+                    echo "$error"; ?></h2>
+                <h2 class="text-danger"><?php if (isset($db_error))
+                    echo "$db_error"; ?></h2>
             </div>
             <div class="text-warning col-lg-8">
                 <form action="./login.php" method="post">
                     <div class="form-group">
                         <hr>
                         <label for="username">Benutzername</label>
-                        <input type="text" id="username" name="username" placeholder="Benutzername" required class="form-control"><br>
+                        <input type="text" id="username" name="username" placeholder="Benutzername" required
+                            class="form-control"><br>
                     </div>
                     <div class="form-group">
                         <label for="password">Passwort</label>
-                        <input type="password" id="password" name="password" placeholder="Passwort" required class="form-control"><br>
+                        <input type="password" id="password" name="password" placeholder="Passwort" required
+                            class="form-control"><br>
                     </div>
                     <div class="form-group">
                         <input type="submit" value="Einloggen" class="btn btn-primary">
                         <hr>
                     </div>
                     <div class="form-group">
-                        <a href="./register.php">Kein Benutzerkonto? Hier registrieren!</a><hr>
+                        <a href="./register.php">Kein Benutzerkonto? Hier registrieren!</a>
+                        <hr>
                     </div>
                     <div class="form-group">
                         <a href="https://www.brain-fit.com/">Passwort vergessen?</a>

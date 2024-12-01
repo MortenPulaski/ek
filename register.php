@@ -68,8 +68,11 @@ if ($conn) {
                 <hr class="divider" />
             </div>
             <div class="mt-auto">
-                <h2 class="text-danger"><?php if (isset($success)) {echo $success;}?></h2>
-                <h2 class="text-danger"><?php if (isset($error)) echo htmlspecialchars($error); ?></h2>
+                <h2 class="text-danger"><?php if (isset($success)) {
+                    echo $success;
+                } ?></h2>
+                <h2 class="text-danger"><?php if (isset($error))
+                    echo htmlspecialchars($error); ?></h2>
             </div>
             <div class="text-warning col-lg-8">
                 <form action="./register.php" method="post">
