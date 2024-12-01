@@ -21,7 +21,7 @@
                     dass ihre Daten nicht in die Hände Dritter gelangen, die möglicherweise nicht die gleichen
                     Datenschutzstandards einhalten.<br>
                 </p>
-                <a class="text-black-50 btn btn-primary" href="./#services">Jetzt starten!</a><br><br>
+                <a class="text-black-50 btn btn-primary" href="./services.php">Jetzt starten!</a><br><br>
             </div>
         </div>
     </div>

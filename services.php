@@ -27,15 +27,15 @@
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
                         <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
-                        <h3 class="text-warning font-weight-bold">Ready to Publish</h3>
-                        <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p>
+                        <h3 class="text-warning font-weight-bold">Kubernetes</h3>
+                        <p class="text-muted mb-0">Kubernetes: Flexibilität und Kontrolle für Ihre Anwendungen!</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
                         <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
-                        <h3 class="text-warning font-weight-bold">Made with Love</h3>
-                        <p class="text-muted mb-0">Is it really open source if it's not made with love?</p>
+                        <h3 class="text-warning font-weight-bold">Linux</h3>
+                        <p class="text-muted mb-0">Linux: Ihr Betriebssystem, Ihre Regeln!</p>
                     </div>
                 </div>
             </div>
