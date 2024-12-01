@@ -20,7 +20,7 @@ try {
     }
 } catch (Exception $e) {
     error_log($e->getMessage());
-    $db_error = "Die Verbindung zur Datenbank konnte nicht hergestellt werden. Bitte versuchen Sie es später erneut.";
+    $db_error = "Die Datenbank ist derzeit nicht verfügbar! Bitte versuchen Sie es später erneut!";
 }
 
 // Verarbeitung des Login-Formulars
