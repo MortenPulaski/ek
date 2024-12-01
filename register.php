@@ -9,7 +9,8 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Überprüfen, ob die Verbindung erfolgreich war
 if ($conn->connect_error) {
-    die("Verbindung fehlgeschlagen: " . $conn->connect_error);
+    error_log("Verbindung fehlgeschlagen: " . $conn->connect_error);
+    die("Verbindung zur Datenbank konnte nicht hergestellt werden.");
 }
 
 // Überprüfen, ob das Formular gesendet wurde
@@ -17,13 +18,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $user = $_POST['username'];
     $pass = password_hash($_POST['password'], PASSWORD_DEFAULT); // Passwort hashen
 
-    // SQL-Statement zum Einfügen des Benutzers
-    $sql = "INSERT INTO users (username, password) VALUES ('$user', '$pass')";
+    // Überprüfen, ob der Benutzername bereits existiert
+    $stmt = $conn->prepare("SELECT COUNT(*) FROM users WHERE username = ?");
+    $stmt->bind_param("s", $user);
+    $stmt->execute();
+    $stmt->bind_result($count);
+    $stmt->fetch();
+    $stmt->close();
 
-    if ($conn->query($sql) === TRUE) {
-        $success = "Registrierung erfolgreich!";
+    if ($count > 0) {
+        $error = "Der Benutzer ist bereits registriert! Bitte wählen Sie einen anderen Benutzernamen aus!";
     } else {
-        echo "Fehler: " . $sql . "<br>" . $conn->error;
+        // Vorbereitete Anweisung zum Einfügen des Benutzers
+        $stmt = $conn->prepare("INSERT INTO users (username, password) VALUES (?, ?)");
+        $stmt->bind_param("ss", $user, $pass);
+
+        if ($stmt->execute()) {
+            $success = "Registrierung erfolgreich!";
+        } else {
+            error_log("Fehler: " . $stmt->error);
+            echo "Fehler bei der Registrierung. Bitte versuchen Sie es später erneut.";
+        }
+
+        $stmt->close();
     }
 }
 
@@ -41,8 +58,8 @@ $conn->close();
                 <hr class="divider" />
             </div>
             <div class="mt-auto">
-                <h2 class="text-danger"><?php if (isset($success))
-                    echo "$success"; ?></h2>
+                <h2 class="text-danger"><?php if (isset($success)) echo htmlspecialchars($success); ?></h2>
+                <h2 class="text-danger"><?php if (isset($error)) echo htmlspecialchars($error); ?></h2>
             </div>
             <div class=" text-warning col-lg-8">
                 <form action="./register.php" method="post">
@@ -53,7 +70,7 @@ $conn->close();
                             class="form-control"><br>
                     </div>
                     <div class="form-group">
-                        <label for="password">Vergeben Sie ein Passwort</label>
+                        <label for="password">Vergeben Sie Ihr Passwort</label>
                         <input type="password" id="password" name="password" placeholder="Passwort" required
                             class="form-control"><br>
                     </div>
