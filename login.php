@@ -1,14 +1,34 @@
 <?php
 session_start();
+$servername = "localhost";
+$username = "root"; // Standardbenutzername für XAMPP
+$password = ""; // Standardpasswort ist leer
+$dbname = "user_registration";
+
+// Verbindung zur Datenbank herstellen
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Überprüfen, ob die Verbindung erfolgreich war
+if ($conn->connect_error) {
+    error_log("Verbindung fehlgeschlagen: " . $conn->connect_error);
+    die("Verbindung zur Datenbank konnte nicht hergestellt werden.");
+}
 
 // Beispiel für die Verarbeitung des Login-Formulars
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    // Hier solltest du die Anmeldedaten mit deiner Datenbank überprüfen
-    // Beispiel: Angenommen, die Anmeldedaten sind korrekt
-    if ($username === 'marcin' && $password === '0815') {
+    // Überprüfen, ob der Benutzername existiert
+    $stmt = $conn->prepare("SELECT password FROM users WHERE username = ?");
+    $stmt->bind_param("s", $username);
+    $stmt->execute();
+    $stmt->bind_result($hashed_password);
+    $stmt->fetch();
+    $stmt->close();
+
+    // Passwort überprüfen
+    if ($hashed_password && password_verify($password, $hashed_password)) {
         // Setze die Benutzersitzung
         $_SESSION['loggedin'] = true;
         $_SESSION['username'] = $username;
@@ -21,6 +41,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $error = "Ungültiger Benutzername oder Passwort!!!";
     }
 }
+
+$conn->close();
 ?>
 
 <?php require_once('./layout/header.php'); ?>
