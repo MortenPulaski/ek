@@ -32,13 +32,13 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto my-2 my-lg-0">
                     <li class="nav-item"><a class="text-warning2 nav-link" href="./about.php">Über mich</a></li>
-                    <li class="nav-item"><a class="text-warning2 nav-link" href="./#services">Services</a></li>
+                    <li class="nav-item"><a class="text-warning2 nav-link" href="./services.php">Services</a></li>
                     <li class="nav-item"><a class="text-warning2 nav-link" href="./kontakt.php">Kontakt</a></li>
                     <li class="nav-item">
                         <span class="text-danger nav-link">Willkommen,
-                            <?php echo htmlspecialchars($_SESSION['username']); ?>!</span>
+                            <?php echo htmlspecialchars($_SESSION['email']); ?>!</span>
                     </li>
-                    <li class="nav-item"><a class="text-danger nav-link" href="./logout.php">Logout</a></li>
+                    <li class="nav-item"><a class="text-danger nav-link" href="/ek/code/userLogout.php">Logout</a></li>
                 </ul>
             </div>
         </div>
