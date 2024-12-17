@@ -3,8 +3,8 @@ session_start();
 
 // Variablen für die Verbindung mit der Datenbank setzen
 $servername = "localhost";
-$username = "root"; // Standardbenutzername für XAMPP
-$password = ""; // Standardpasswort ist leer
+$username = "www"; // Standardbenutzername für XAMPP
+$password = "0815"; // Standardpasswort ist leer
 $dbname = "user_registration";
 
 // Initialisiere die Verbindung

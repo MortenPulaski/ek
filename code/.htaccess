@@ -1,4 +1,4 @@
 RewriteEngine On
 # Ausnahme hinzufügen: Diese URL wird nicht umgeleitet
-RewriteCond %{REQUEST_URI} !^/ek/code/userLogout.php$
+# RewriteCond %{REQUEST_URI} !^/ek/code/userLogout.php$
 RewriteRule ^ /ek/notfound.php [L,R=302]

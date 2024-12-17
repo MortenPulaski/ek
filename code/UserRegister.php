@@ -1,7 +1,9 @@
 <?php
+session_start();
+
 $servername = "localhost";
-$username = "root"; // Standardbenutzername für XAMPP
-$password = ""; // Standardpasswort ist leer
+$username = "www"; // Standardbenutzername für XAMPP
+$password = "0815"; // Standardpasswort ist leer
 $dbname = "user_registration";
 
 $conn = null;
