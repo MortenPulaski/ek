@@ -1,10 +1,13 @@
 <?php
 session_start();
 
-$servername = "localhost";
-$username = "www"; // Standardbenutzername für XAMPP
-$password = "0815"; // Standardpasswort ist leer
-$dbname = "user_registration";
+// Variablen für die Verbindung mit der Datenbank aus von Datei holen
+$config = require 'DbConfig.php';
+
+$servername = $config['servername'];
+$username = $config['username'];
+$password = $config['password'];
+$dbname = $config['dbname'];
 
 $conn = null;
 $error = null;

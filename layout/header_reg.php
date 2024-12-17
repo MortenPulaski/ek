@@ -38,7 +38,7 @@
                         <span class="text-danger nav-link">Willkommen,
                             <?php echo htmlspecialchars($_SESSION['email']); ?>!</span>
                     </li>
-                    <li class="nav-item"><a class="text-danger nav-link" href="./UserLogout.php">Logout</a></li>
+                    <li class="nav-item"><a class="text-danger nav-link" href="/code/UserLogout.php">Logout</a></li>
                 </ul>
             </div>
         </div>
